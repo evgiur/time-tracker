@@ -1,7 +1,8 @@
 import React from 'react'
 
+
 export default function Dashboardcart() {
   return (
-    <div>Jeremy Robson</div>
+    <div className='body'>Jeremy Robson</div>
   )
 }
