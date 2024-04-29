@@ -1,9 +1,23 @@
 @import "./variables";
 
-body {
-    background-color: $background;
+.body {
+    background-color: $white
 }
 
 .main-cart-backbround {
-    background-color: $blue;
+    color: #{$white};
+    display: flex;
+    justify-content: center;
+    min-width: 327px;
+    min-height: 133px;
+    border-radius: 14px;
+    background-color: #{$blue};
+    font-size: 24px;
+    header {
+        
+    }
+}
+
+.red-text {
+    color: red($color: #000000);
 }
