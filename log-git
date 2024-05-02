@@ -1,0 +1,138 @@
+[33mcommit 1e20b324dd4aa320808bb121a7d34680581f2dcb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: evgiur <evgiur@gmail.com>
+Date:   Mon Feb 26 04:03:46 2024 +0200
+
+    styles-added
+
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mindex 4f6b7f9..e4dcb8d 100644[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@ -14,6 +14,7 @@[m
+         "react": "^18.2.0",[m
+         "react-dom": "^18.2.0",[m
+         "react-scripts": "5.0.1",[m
+[32m+[m[32m        "sass": "^1.71.1",[m
+         "web-vitals": "^2.1.4"[m
+       }[m
+     },[m
+[36m@@ -9200,6 +9201,11 @@[m
+         "url": "https://opencollective.com/immer"[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/immutable": {[m
+[32m+[m[32m      "version": "4.3.5",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/immutable/-/immutable-4.3.5.tgz",[m
+[32m+[m[32m      "integrity": "sha512-8eabxkth9gZatlwl5TBuJnCsoTADlL6ftEr7A4qgdaTsPyreilDSnUk57SO+jfKcNtxPa22U5KK6DSeAYhpBJw=="[m
+[32m+[m[32m    },[m
+     "node_modules/import-fresh": {[m
+       "version": "3.3.0",[m
+       "resolved": "https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.0.tgz",[m
+[36m@@ -15248,6 +15254,22 @@[m
+       "resolved": "https://registry.npmjs.org/sanitize.css/-/sanitize.css-13.0.0.tgz",[m
+       "integrity": "sha512-ZRwKbh/eQ6w9vmTjkuG0Ioi3HBwPFce0O+v//ve+aOq1oeCy7jMV2qzzAlpsNuqpqCBjjriM1lbtZbF/Q8jVyA=="[m
+     },[m
+[32m+[m[32m    "node_modules/sass": {[m
+[32m+[m[32m      "version": "1.71.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/sass/-/sass-1.71.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "chokidar": ">=3.0.0 <4.0.0",[m
+[32m+[m[32m        "immutable": "^4.0.0",[m
+[32m+[m[32m        "source-map-js": ">=0.6.2 <2.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "sass": "sass.js"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=14.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/sass-loader": {[m
+       "version": "12.6.0",[m
+       "resolved": "https://registry.npmjs.org/sass-loader/-/sass-loader-12.6.0.tgz",[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 41e79b8..338d811 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -9,6 +9,7 @@[m
+     "react": "^18.2.0",[m
+     "react-dom": "^18.2.0",[m
+     "react-scripts": "5.0.1",[m
+[32m+[m[32m    "sass": "^1.71.1",[m
+     "web-vitals": "^2.1.4"[m
+   },[m
+   "scripts": {[m
+[1mdiff --git a/src/App.js b/src/App.js[m
+[1mindex e10f52a..0c1a27b 100644[m
+[1m--- a/src/App.js[m
+[1m+++ b/src/App.js[m
+[36m@@ -1,5 +1,6 @@[m
+ import Maincart from "./components/Maincart";[m
+ import Dashboadrcart from "./components/Dashboardcart";[m
+[32m+[m[32mimport './scss/app.scss';[m
+ [m
+ export default function App() {[m
+   return ([m
+[1mdiff --git a/src/components/Dashboardcart.jsx b/src/components/Dashboardcart.jsx[m
+[1mindex 1260c0f..5c83fec 100644[m
+[1m--- a/src/components/Dashboardcart.jsx[m
+[1m+++ b/src/components/Dashboardcart.jsx[m
+[36m@@ -1,7 +1,8 @@[m
+ import React from 'react'[m
+ [m
+[32m+[m
+ export default function Dashboardcart() {[m
+   return ([m
+[31m-    <div>Jeremy Robson</div>[m
+[32m+[m[32m    <div className='body'>Jeremy Robson</div>[m
+   )[m
+ }[m
+[1mdiff --git a/src/components/Maincart.jsx b/src/components/Maincart.jsx[m
+[1mindex 268a429..7da4f43 100644[m
+[1m--- a/src/components/Maincart.jsx[m
+[1m+++ b/src/components/Maincart.jsx[m
+[36m@@ -1,8 +1,16 @@[m
+[31m-import React from 'react'[m
+[32m+[m[32mimport React from 'react';[m
+[32m+[m[32mimport '../scss/app.scss';[m
+ [m
+ export default function Maincart() {[m
+   return ([m
+[31m-    <div>Dayly</div>[m
+[32m+[m[32m    <div className='main-cart-background'>[m
+[32m+[m[32m      Report for[m[41m [m
+[32m+[m[32m      Jeremy Robson[m
+[32m+[m[41m  [m
+[32m+[m[32m      Daily[m
+[32m+[m[32m      Weekly[m
+[32m+[m[32m      Monthly[m
+[32m+[m[32m    </div>[m
+   )[m
+ }[m
+ [m
+[1mdiff --git a/src/scss/_variables.scss b/src/scss/_variables.scss[m
+[1mnew file mode 100644[m
+[1mindex 0000000..310c359[m
+[1m--- /dev/null[m
+[1m+++ b/src/scss/_variables.scss[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32m$background: rgb(13, 19, 35);[m
+[32m+[m[32m$blue: hsl(246, 80%, 60%)[m
+\ No newline at end of file[m
+[1mdiff --git a/src/scss/app.scss b/src/scss/app.scss[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ced795a[m
+[1m--- /dev/null[m
+[1m+++ b/src/scss/app.scss[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32m@import "./variables";[m
+[32m+[m
+[32m+[m[32mbody {[m
+[32m+[m[32m    background-color: $background;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.main-cart-backbround {[m
+[32m+[m[32m    background-color: $blue;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m

@@ -5,8 +5,10 @@ import './scss/app.scss';
 export default function App() {
   return (
     <div className="App">
-      <Maincart />
-      <Dashboadrcart />
+      <body className="body">
+        <Maincart />
+        <Dashboadrcart /> 
+      </body>
     </div>
   );
 }

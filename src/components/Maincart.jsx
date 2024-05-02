@@ -3,13 +3,16 @@ import '../scss/app.scss';
 
 export default function Maincart() {
   return (
-    <div className='main-cart-background'>
-      Report for 
-      Jeremy Robson
-  
-      Daily
-      Weekly
-      Monthly
+    <div className='main-cart-backbround'>
+      <header className ="red-text">
+        Report for 
+        Jeremy Robson
+      </header>
+      <list>
+        Daily
+        Weekly
+        Monthly
+      </list>  
     </div>
   )
 }
