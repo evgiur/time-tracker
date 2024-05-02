@@ -3,8 +3,8 @@ import '../scss/app.scss';
 
 export default function Maincart() {
   return (
-    <div className='main-cart-backbround'>
-      <header className ="red-text">
+    <div className='main-cart-background'>
+      <header class="red-text">
         Report for 
         Jeremy Robson
       </header>
