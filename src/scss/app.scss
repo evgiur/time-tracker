@@ -6,8 +6,32 @@
 }
 
 .main-cart-background {
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+          min-width: 66px; 
+          min-height: 66px;
+          width: 50%;  // Адаптивная ширина, изображение будет увеличиваться при изменении масштаба страницы
+          height: auto;  // Высота будет автоматически подстраиваться, сохраняя пропорции изображения
+          max-width: 100%;  // Изображение не будет превышать ширину родительского элемента
+        }}
     header {
-        color: red($color: #ff0000);
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 15px;  // Задание размера шрифта 15px для h1
+            font-weight: 300;
+        }
+        
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;  // Задание размера шрифта 15px для h1
+            font-weight: 300;
+        }
     }
     color: $white;
     display: flex;
