@@ -1,5 +1,11 @@
 @import "./variables";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .body {
     font-family: $rubik;
     background-color: $white
@@ -17,28 +23,48 @@
           width: 50%;  // Адаптивная ширина, изображение будет увеличиваться при изменении масштаба страницы
           height: auto;  // Высота будет автоматически подстраиваться, сохраняя пропорции изображения
           max-width: 100%;  // Изображение не будет превышать ширину родительского элемента
-        }}
+        }
+    }
     header {
         h1 {
             margin: 0;
             padding: 0;
-            font-size: 15px;  // Задание размера шрифта 15px для h1
+            font-size: 15px;  
             font-weight: 300;
         }
         
         h2 {
             margin: 0;
             padding: 0;
-            font-size: 24px;  // Задание размера шрифта 15px для h1
+            font-size: 24px;
             font-weight: 300;
         }
     }
+    
     color: $white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     min-width: 327px;
     min-height: 133px;
     border-radius: 14px;
     background-color: $blue;
     font-size: 24px;
+}
+
+.periodicity {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    button {
+        display: inherit;
+        flex-wrap: inherit;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        color: inherit;
+        background-color: inherit;
+        cursor: pointer;
+
+    }
 }
