@@ -12,7 +12,7 @@ export default function Maincart() {
         <h1>Report for</h1>
         <h2>Jeremy Robson</h2>
       </header>
-      <div className='periodicity'> 
+      <div className='tabs'> 
         <button id="daily-button">Daily</button>
         <button id="weekly-button">Weekly</button>
         <button id="monthly-button">Monthly</button>
