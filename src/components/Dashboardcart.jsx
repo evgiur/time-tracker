@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../scss/app-copy.scss';
 
 
 export default function Dashboardcart() {

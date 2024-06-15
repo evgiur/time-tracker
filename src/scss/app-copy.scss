@@ -1,0 +1,81 @@
+@import "./variables";
+
+// Селектор применяется ко всем элементам 
+* {
+    border: 0; // Граница
+    padding: 0; // Внутренние отступы
+    margin: 0; // Внешние отступы
+    box-sizing: border-box; //Ширина и высота элемента включают границы и отступы
+}
+
+.main-cart {
+    font-family: $rubik;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 327px;
+    height: 203px;
+
+    header {
+        font-weight: 300;
+        
+        h1 {
+            font-size: 15px;  
+        }
+        
+        h2 {
+            font-size: 24px;
+        }
+    }
+   
+    .top-block, .tabs {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .top-block {
+        z-index: 2;
+        justify-content: center;
+        height: 133px;
+        border-radius: 14px;
+        background-color: $blue;
+        font-size: 24px;
+        color: $white;
+
+        .image-container {
+            flex: 1 0 110px;
+            align-items: center;
+            img {
+              border: 2px solid white;
+              border-radius: 50%;
+              min-width: 66px; 
+              min-height: 66px;
+              width: 50%;  // Адаптивная ширина, изображение будет увеличиваться при изменении масштаба страницы
+              height: auto;  // Высота будет автоматически подстраиваться, сохраняя пропорции изображения
+              max-width: 50%;  // Изображение не будет превышать ширину родительского элемента
+            }
+        }
+    
+    }
+
+    .tabs {
+        z-index: 1;
+        flex-direction: row;
+        height: 100%;
+        border-radius: 14px;
+        background-color: $darkBlue;
+        .buttons {
+            align-items: flex-end;
+            justify-content: space-between;
+            align-content: center;
+            display: flex;
+            cursor: pointer;
+            
+        }
+    }
+}
+

@@ -7,11 +7,13 @@
 }
 
 .body {
-    font-family: $rubik;
+    
     background-color: $white
 }
 
 .main-cart-background {
+    font-family: $rubik;
+    color: white;
     position: absolute;
     z-index: 2;
 
@@ -30,11 +32,9 @@
     }
     header {
         font-weight: 300;
-        margin: 0;
-        padding: 0;
+        
         h1 {
             font-size: 15px;  
-            
         }
         
         h2 {
@@ -76,7 +76,6 @@
         color: inherit;
         background-color: inherit;
         cursor: pointer;
-
     }
 }
 
