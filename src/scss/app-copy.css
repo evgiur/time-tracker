@@ -1,0 +1,60 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-cart {
+  display: flex;
+  flex-wrap: wrap;
+  width: 327px;
+  height: 203px;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 14px;
+  background-color: hsl(235, 46%, 20%);
+  font-family: Rubik, sans-serif;
+  color: white;
+}
+.main-cart .image-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 14px;
+  height: 133px;
+  max-height: 100%;
+}
+.main-cart .image-container img {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  width: 50%;
+  height: auto;
+  max-width: 100%;
+}
+.main-cart .image-container header {
+  background-color: hsl(246, 80%, 60%);
+  font-weight: 300;
+  border-radius: 14px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+.main-cart .image-container header h1 {
+  font-size: 15px;
+}
+.main-cart .image-container header h2 {
+  font-size: 24px;
+}
+.main-cart .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}/*# sourceMappingURL=app-copy.css.map */

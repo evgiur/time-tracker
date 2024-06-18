@@ -9,73 +9,67 @@
 }
 
 .main-cart {
-    font-family: $rubik;
-    color: white;
-    position: relative;
+
     display: flex;
     flex-wrap: wrap;
     width: 327px;
     height: 203px;
-
-    header {
-        font-weight: 300;
-        
-        h1 {
-            font-size: 15px;  
-        }
-        
-        h2 {
-            font-size: 24px;
-        }
-    }
-   
-    .top-block, .tabs {
-        position: absolute;
-        width: 100%;
+    flex-direction: row;
+    
+    align-items: flex-start;
+    border-radius: 14px;
+    background-color: $darkBlue;
+    
+    font-family: $rubik;
+    color: white;
+    
+    
+    .image-container {
         display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    .top-block {
-        z-index: 2;
+        flex: 1;
+        //justify-content: space-around;
         justify-content: center;
-        height: 133px;
-        border-radius: 14px;
+        flex-direction: row;
+        align-items: center;
         background-color: $blue;
-        font-size: 24px;
-        color: $white;
+        border-radius: 14px;
+        height: 133px;
+        gap: 21px;
+        
+        img {
+            
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 66px; 
+            height: 66px;
+        }
 
-        .image-container {
-            flex: 1 0 110px;
-            align-items: center;
-            img {
-              border: 2px solid white;
-              border-radius: 50%;
-              min-width: 66px; 
-              min-height: 66px;
-              width: 50%;  // Адаптивная ширина, изображение будет увеличиваться при изменении масштаба страницы
-              height: auto;  // Высота будет автоматически подстраиваться, сохраняя пропорции изображения
-              max-width: 50%;  // Изображение не будет превышать ширину родительского элемента
+        header {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $blue;    
+            border-radius: 14px;
+            font-size: 24px;
+            h1 {
+                font-size: 15px;  
+            }
+            
+            h2 {
+                font-size: 24px;
             }
         }
-    
-    }
 
-    .tabs {
-        z-index: 1;
-        flex-direction: row;
-        height: 100%;
-        border-radius: 14px;
-        background-color: $darkBlue;
-        .buttons {
-            align-items: flex-end;
-            justify-content: space-between;
-            align-content: center;
-            display: flex;
-            cursor: pointer;
-            
-        }
     }
+    
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+    }
+ 
 }
 
