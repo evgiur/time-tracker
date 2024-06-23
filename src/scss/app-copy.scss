@@ -27,7 +27,6 @@
     .image-container {
         display: flex;
         flex: 1;
-        //justify-content: space-around;
         justify-content: center;
         flex-direction: row;
         align-items: center;
@@ -68,7 +67,16 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        cursor: pointer;
+        button {
+            background-color: $darkBlue;
+            font-family: $rubik;
+            color: $desaturatedBlue;
+            font-size: 18px;
+            cursor: pointer;
+            &:hover {
+                color: white; 
+            }
+        }
     }
  
 }
