@@ -1,81 +1,90 @@
 @import "./variables";
 
+// Селектор применяется ко всем элементам 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    border: 0; // Граница
+    padding: 0; // Внутренние отступы
+    margin: 0; // Внешние отступы
+    box-sizing: border-box; //Ширина и высота элемента включают границы и отступы
 }
 
 .body {
-    
-    background-color: $white
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 375px;
+    background-color: $background;
 }
 
-.main-cart-background {
+.main-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 327px;
+    height: 203px;
+    flex-direction: row;
+    align-items: flex-start;
+    border-radius: 14px;
+    background-color: $darkBlue;
     font-family: $rubik;
     color: white;
-    position: absolute;
-    z-index: 2;
-
+    
     .image-container {
         display: flex;
+        flex: 1;
         justify-content: center;
+        flex-direction: row;
         align-items: center;
+        background-color: $blue;
+        border-radius: 14px;
+        height: 133px;
+        gap: 21px;
         
         img {
-          min-width: 66px; 
-          min-height: 66px;
-          width: 50%;  // Адаптивная ширина, изображение будет увеличиваться при изменении масштаба страницы
-          height: auto;  // Высота будет автоматически подстраиваться, сохраняя пропорции изображения
-          max-width: 100%;  // Изображение не будет превышать ширину родительского элемента
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 66px; 
+            height: 66px;
         }
-    }
-    header {
-        font-weight: 300;
-        
-        h1 {
-            font-size: 15px;  
-        }
-        
-        h2 {
+
+        header {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $blue;    
+            border-radius: 14px;
             font-size: 24px;
+            h1 {
+                font-size: 15px;  
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
         }
+
     }
     
-    color: $white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-width: 327px;
-    min-height: 133px;
-    border-radius: 14px;
-    background-color: $blue;
-    font-size: 24px;
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        button {
+            background-color: $darkBlue;
+            font-family: $rubik;
+            color: $desaturatedBlue;
+            font-size: 18px;
+            cursor: pointer;
+            &:hover {
+                color: white; 
+            }
+        }
+    }
+ 
 }
 
-.tabs {
+.dashboard-card {
     display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    min-width: 327px;
-    min-height: 133px;
-    border-radius: 14px;
-    background-color: $veryDarkBlue;
-    z-index: 1;
-    button {
-        display: inherit;
-        flex-wrap: inherit;
-        align-items: flex-end;
-        align-content: center;
-        justify-content: space-between;
-        border: 0;
-        padding: 0;
-        margin: 0;
-        color: inherit;
-        background-color: inherit;
-        cursor: pointer;
-    }
 }
 

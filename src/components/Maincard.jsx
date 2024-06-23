@@ -1,10 +1,10 @@
 import React from 'react';
-import '../scss/app-copy.scss';
+import '../scss/app.scss';
 import avatar from '../assets/images/image-jeremy.png';
 
-export default function Maincart() {
+export default function Maincard() {
   return (
-    <div className='main-cart'>
+    <div className='main-card'>
         <div className='image-container'>
           <img src={avatar} alt="jeremy"></img>
   
