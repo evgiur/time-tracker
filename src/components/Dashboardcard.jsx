@@ -7,7 +7,7 @@ export default function Dashboardcard() {
     <div className='dashboard-card'>
       <div className='period'>
         Work 
-      </div>    
+      </div>
     </div>
   )
 }

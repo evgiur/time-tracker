@@ -12,14 +12,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 375px;
+    min-width: 375px;
     background-color: $background;
 }
 
 .main-card {
     display: flex;
     flex-wrap: wrap;
-    width: 327px;
+    min-width: 327px;
     height: 203px;
     flex-direction: row;
     align-items: flex-start;

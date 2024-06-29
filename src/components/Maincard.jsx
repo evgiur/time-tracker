@@ -5,6 +5,7 @@ import avatar from '../assets/images/image-jeremy.png';
 export default function Maincard() {
   return (
     <div className='main-card'>
+      
         <div className='image-container'>
           <img src={avatar} alt="jeremy"></img>
   
@@ -20,6 +21,7 @@ export default function Maincard() {
           <button id="weekly-button">Weekly</button>
           <button id="monthly-button">Monthly</button>
         </div>
+
     </div>
   )
 }
