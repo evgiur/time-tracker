@@ -2,9 +2,13 @@ import React from 'react';
 import '../scss/app.scss';
 import avatar from '../assets/images/image-jeremy.png';
 
-export default function Maincart() {
+export default function Maincard() {
   return (
+<<<<<<< HEAD
     <div className='header-cart'>
+=======
+    <div className='main-card'>
+>>>>>>> origin/main
         <div className='image-container'>
           <img src={avatar} alt="jeremy"></img>
   
