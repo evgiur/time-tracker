@@ -1,5 +1,5 @@
-import Maincart from "./components/Maincart";
-import Dashboadrcart from "./components/Dashboardcart";
+import Maincart from "./components/Maincard";
+import Dashboadrcart from "./components/Dashboardcard";
 import './scss/app.scss';
 
 export default function App() {
