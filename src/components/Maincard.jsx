@@ -4,11 +4,7 @@ import avatar from '../assets/images/image-jeremy.png';
 
 export default function Maincard() {
   return (
-<<<<<<< HEAD
-    <div className='header-cart'>
-=======
     <div className='main-card'>
->>>>>>> origin/main
         <div className='image-container'>
           <img src={avatar} alt="jeremy"></img>
   

@@ -2,7 +2,6 @@ import React from 'react';
 import '../scss/app.scss';
 
 
-<<<<<<< HEAD
 export default function Activitycard() {
   return (
     <div className='activity-card'>
@@ -24,14 +23,6 @@ export default function Activitycard() {
         </div>
       </div>
       
-=======
-export default function Dashboardcard() {
-  return (
-    <div className='dashboard-card'>
-      <div className='period'>
-        Work 
-      </div>    
->>>>>>> origin/main
     </div>
   )
 }
