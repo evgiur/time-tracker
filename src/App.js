@@ -1,19 +1,21 @@
-<<<<<<< HEAD
-import Maincart from "./components/Maincard";
-import Dashboadrcart from "./components/Dashboardcard";
-=======
 import Maincard from "./components/Maincard";
 import Dashboadrcard from "./components/Dashboardcard";
->>>>>>> origin/main
 import './scss/app.scss';
+// import icon from '../assets/images/icon-work.svg';
+{/*const card = [{icon: icon, color:  }]*/}
 
 export default function App() {
   return (
     <div className="App">
-      <body className="body">
+      <main>
         <Maincard />
+        <Dashboadrcard />
         <Dashboadrcard /> 
-      </body>
+        <Dashboadrcard /> 
+        <Dashboadrcard /> 
+        <Dashboadrcard /> 
+        <Dashboadrcard /> 
+      </main>
     </div>
   );
 }

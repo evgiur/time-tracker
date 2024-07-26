@@ -1,12 +1,15 @@
 @import "./variables";
 
-body {
+.App {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 375px;
+    margin-top: 25px;
+
     background-color: $veryDarkBlue;
 }
+
 // Селектор применяется ко всем элементам 
 * {
     border: 0; // Граница
@@ -15,23 +18,16 @@ body {
     box-sizing: border-box; //Ширина и высота элемента включают границы и отступы
 }
 
-.body {
+.profile {
+    margin-top: 25px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 375px;
-    background-color: $background;
-}
-
-.main-card {
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 327px;
+    flex-wrap: wrap; //если
+    width: 327px;
     height: 203px;
-    flex-direction: row;
+    flex-direction: row; // расположение элементов в горизонтально
     
     align-items: flex-start;
-    border-radius: 14px;
+    border-radius: 14px; // радиус скругления углов блока
     background-color: $darkBlue;
     
     font-family: $rubik;
@@ -43,7 +39,6 @@ body {
         flex: 1;
         
         justify-content: center;
-        flex-direction: row;
         flex-direction: row;
         align-items: center;
         background-color: $blue;
@@ -68,11 +63,13 @@ body {
             border-radius: 14px;
             font-size: 24px;
             h1 {
-                font-size: 15px;  
+                font-size: 15px;
+                font-weight: 100;
             }
             
             h2 {
                 font-size: 24px;
+                font-weight: 100;
             }
         }
 
@@ -98,9 +95,85 @@ body {
  
 }
 
-.activity-card {
+.activity {
     display: flex;
+    
     width: 327px;
     height: 160px;
+    position: relative;
+    margin-top: 25px;
+    border-radius: 14px;
+    background-color: $work;
+    overflow: hidden;
+    
+    img {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        width: 78px;
+        height: 78px;
+    }
+    .small-block {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 123px;
+        align-self: flex-end;
+        justify-content: center;
+        position: absolute;
+        border-radius: 14px;
+        background-color: $darkBlue;
+
+        font-family: $rubik;
+        color: white;
+        font-weight: 100;
+       
+        .top-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0px 18px;
+            //padding-right: 18px;
+            .activity-type {
+                font-size: 18px;
+           }
+            .dots-menu {
+                display: flex;
+                width: 21px;
+                height: 5px;
+                flex-direction: row;
+                gap: 3px;
+                .dot {
+                    width: 5px;
+                    height: 5px;
+                    background-color: $paleBlue;
+                    border-radius: 50%;
+                }
+            }
+        }
+        
+        .bottom-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0px 18px;
+            .time-amount {
+                font-size: 32px;
+            }
+            .last-period {
+                font-size: 15px;
+                color: $paleBlue;
+            }
+        }
+
+    }
+    
+
+
 }
 
