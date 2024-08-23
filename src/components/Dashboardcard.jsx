@@ -2,7 +2,7 @@ import React from 'react';
 import '../scss/app.scss';
 import work from '../assets/images/icon-work.svg'
 
-export default function Dashboardcard() {
+export default function Dashboardcard({title, timeframes}) {
   return (
     <div className='activity'>
     <img src={work} alt="work-icon"></img>
@@ -10,7 +10,7 @@ export default function Dashboardcard() {
         
         <div className='top-row'>
           
-          <div className='activity-type'>Work</div>
+          <div className='activity-type'>{title}</div>
           
           <div className='dots-menu'>
             <div className='dot'></div>
@@ -23,11 +23,11 @@ export default function Dashboardcard() {
         <div className='bottom-row'>
           
           <div className='time-amount'>
-            32hrs {/*props */}
+            {timeframes.weekly.current}hrs
           </div>
 
           <div className='last-period'>
-            Last week - 36hrs {/* props */}
+            Last week - {timeframes.weekly.previous}hrs 
           </div>
 
         </div>
