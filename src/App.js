@@ -1,8 +1,8 @@
 import Maincard from "./components/Maincard";
 import Dashboadrcard from "./components/Dashboardcard";
 import './scss/app.scss';
-// import icon from '../assets/images/icon-work.svg';
-import activities from "../src/assets/images/data.json"
+import { activities } from "./assets/data.js"
+import { v4 as unicId } from 'uuid'; //генерация уникальных ключей
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
       <main>
         <Maincard />
         {activities.map((obj) => (
-          <Dashboadrcard title={obj.title} timeframes={obj.timeframes}/>
+          <Dashboadrcard key={unicId()} title={obj.title} timeframes={obj.timeframes} imgSrc={obj.imgSrc}/>
         ))}
         
       </main>

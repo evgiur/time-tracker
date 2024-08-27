@@ -1,6 +1,8 @@
+export const activities =
 [
   {
     "title": "Work",
+    "imgSrc": "./images/icon-work.svg",
     "timeframes": {
       "daily": {
         "current": 5,
@@ -13,11 +15,11 @@
       "monthly": {
         "current": 103,
         "previous": 128
-      }
+      } 
     }
     
   },
-  {
+  { 
     "title": "Play",
     "timeframes": {
       "daily": {
@@ -31,10 +33,12 @@
       "monthly": {
         "current": 23,
         "previous": 29
-      }
+      },
+      "imgSrc": "../assets/images/icon-play.svg"
     }
+    
   },
-  {
+  { 
     "title": "Study",
     "timeframes": {
       "daily": {
@@ -48,10 +52,11 @@
       "monthly": {
         "current": 13,
         "previous": 19
-      }
+      },
+      "imgSrc": "../assets/images/icon-study.svg"
     }
   },
-  {
+  { 
     "title": "Exercise",
     "timeframes": {
       "daily": {
@@ -65,10 +70,11 @@
       "monthly": {
         "current": 11,
         "previous": 18
-      }
+      },
+      "imgSrc": "assets/images/icon-exercise.svg"
     }
   },
-  {
+  { 
     "title": "Social",
     "timeframes": {
       "daily": {
@@ -82,10 +88,11 @@
       "monthly": {
         "current": 21,
         "previous": 23
-      }
+      },
+      "imgSrc": "../assets/images/icon-social.svg"
     }
   },
-  {
+  { 
     "title": "Self Care",
     "timeframes": {
       "daily": {
@@ -99,7 +106,8 @@
       "monthly": {
         "current": 7,
         "previous": 11
-      }
+      },
+      "imgSrc": "../assets/images/icon-self-care.svg"
     }
   }
 ]

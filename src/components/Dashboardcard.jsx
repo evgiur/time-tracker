@@ -1,11 +1,12 @@
 import React from 'react';
 import '../scss/app.scss';
-import work from '../assets/images/icon-work.svg'
 
-export default function Dashboardcard({title, timeframes}) {
+
+export default function Dashboardcard({title, timeframes, imgSrc}) {
+  console.log(imgSrc)
   return (
     <div className='activity'>
-    <img src={work} alt="work-icon"></img>
+    <img src={imgSrc} alt="icon"></img>
       <div className='small-block'>
         
         <div className='top-row'>
