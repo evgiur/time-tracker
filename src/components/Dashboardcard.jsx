@@ -1,9 +1,8 @@
 import React from 'react';
 import '../scss/app.scss';
 
-
-export default function Dashboardcard({title, timeframes, imgSrc}) {
-  console.log(imgSrc)
+export default function Dashboardcard({title, timeframes, imgSrc }) {
+  
   return (
     <div className='activity'>
     <img src={imgSrc} alt="icon"></img>

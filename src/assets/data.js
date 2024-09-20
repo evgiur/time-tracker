@@ -1,8 +1,15 @@
+import iconWork from '../assets/images/icon-work.svg';
+import iconPlay from '../assets/images/icon-play.svg';
+import iconStudy from '../assets/images/icon-study.svg';
+import iconExercise from '../assets/images/icon-exercise.svg';
+import iconSocial from '../assets/images/icon-social.svg';
+import iconSelfCare from '../assets/images/icon-self-care.svg';
+
 export const activities =
 [
   {
     "title": "Work",
-    "imgSrc": "./images/icon-work.svg",
+    "imgSrc": iconWork,
     "timeframes": {
       "daily": {
         "current": 5,
@@ -17,10 +24,10 @@ export const activities =
         "previous": 128
       } 
     }
-    
   },
   { 
     "title": "Play",
+    "imgSrc": iconPlay,
     "timeframes": {
       "daily": {
         "current": 1,
@@ -33,13 +40,13 @@ export const activities =
       "monthly": {
         "current": 23,
         "previous": 29
-      },
-      "imgSrc": "../assets/images/icon-play.svg"
+      }
     }
     
   },
   { 
     "title": "Study",
+    "imgSrc": iconStudy,
     "timeframes": {
       "daily": {
         "current": 0,
@@ -52,12 +59,12 @@ export const activities =
       "monthly": {
         "current": 13,
         "previous": 19
-      },
-      "imgSrc": "../assets/images/icon-study.svg"
+      }
     }
   },
   { 
     "title": "Exercise",
+    "imgSrc": iconExercise,
     "timeframes": {
       "daily": {
         "current": 1,
@@ -70,12 +77,12 @@ export const activities =
       "monthly": {
         "current": 11,
         "previous": 18
-      },
-      "imgSrc": "assets/images/icon-exercise.svg"
+      }
     }
   },
   { 
     "title": "Social",
+    "imgSrc": iconSocial,
     "timeframes": {
       "daily": {
         "current": 1,
@@ -88,12 +95,12 @@ export const activities =
       "monthly": {
         "current": 21,
         "previous": 23
-      },
-      "imgSrc": "../assets/images/icon-social.svg"
+      }
     }
   },
   { 
     "title": "Self Care",
+    "imgSrc": iconSelfCare,
     "timeframes": {
       "daily": {
         "current": 0,
@@ -106,8 +113,7 @@ export const activities =
       "monthly": {
         "current": 7,
         "previous": 11
-      },
-      "imgSrc": "../assets/images/icon-self-care.svg"
+      }
     }
   }
 ]
