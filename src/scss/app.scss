@@ -102,7 +102,6 @@
     position: relative;
     margin-top: 25px;
     border-radius: 14px;
-    background-color: $work;
     overflow: hidden;
     
     img {
@@ -123,6 +122,26 @@
         position: absolute;
         border-radius: 14px;
         background-color: $darkBlue;
+        // icons-background-color
+        .Work {
+            background-color: $work;
+        }
+        .Play {
+            background-color: $play;
+        }
+        .Study {
+            background-color: $study;
+        }
+        .Exercise {
+            background-color: $exercise;
+        }
+        .Social {
+            background-color: $social;
+        }
+        .Self {
+            background-color: $self-care;
+        }
+    
 
         font-family: $rubik;
         color: white;
@@ -171,8 +190,6 @@
         }
 
     }
-    
-
 
 }
 

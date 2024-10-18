@@ -4,7 +4,7 @@ import '../scss/app.scss';
 export default function Dashboardcard({title, timeframes, imgSrc }) {
   
   return (
-    <div className='activity'>
+    <div className={`activity ${title}`}>
     <img src={imgSrc} alt="icon"></img>
       <div className='small-block'>
         

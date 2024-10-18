@@ -99,7 +99,7 @@ export const activities =
     }
   },
   { 
-    "title": "Self Care",
+    "title": "Self",
     "imgSrc": iconSelfCare,
     "timeframes": {
       "daily": {
