@@ -104,6 +104,26 @@
     border-radius: 14px;
     overflow: hidden;
     
+    // icons-background-color
+    &.Work {
+        background-color: $work;
+    }
+    &.Play {
+        background-color: $play;
+    }
+    &.Study {
+        background-color: $study;
+    }
+    &.Exercise {
+        background-color: $exercise;
+    }
+    &.Social {
+        background-color: $social;
+    }
+    &.Self {
+        background-color: $self-care;
+    }
+
     img {
         position: absolute;
         top: -10px;
@@ -122,27 +142,7 @@
         position: absolute;
         border-radius: 14px;
         background-color: $darkBlue;
-        // icons-background-color
-        .Work {
-            background-color: $work;
-        }
-        .Play {
-            background-color: $play;
-        }
-        .Study {
-            background-color: $study;
-        }
-        .Exercise {
-            background-color: $exercise;
-        }
-        .Social {
-            background-color: $social;
-        }
-        .Self {
-            background-color: $self-care;
-        }
-    
-
+ 
         font-family: $rubik;
         color: white;
         font-weight: 100;
