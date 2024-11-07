@@ -6,38 +6,32 @@
     flex-direction: column;
     width: 375px;
     margin-top: 25px;
-
     background-color: $veryDarkBlue;
 }
 
-// Селектор применяется ко всем элементам 
 * {
-    border: 0; // Граница
-    padding: 0; // Внутренние отступы
-    margin: 0; // Внешние отступы
-    box-sizing: border-box; //Ширина и высота элемента включают границы и отступы
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .profile {
     margin-top: 25px;
     display: flex;
-    flex-wrap: wrap; //если
+    flex-wrap: wrap;
     width: 327px;
     height: 203px;
-    flex-direction: row; // расположение элементов в горизонтально
-    
+    flex-direction: row;
     align-items: flex-start;
-    border-radius: 14px; // радиус скругления углов блока
+    border-radius: 14px;
     background-color: $darkBlue;
-    
     font-family: $rubik;
     color: white;
-    
-    
+
     .image-container {
         display: flex;
         flex: 1;
-        
         justify-content: center;
         flex-direction: row;
         align-items: center;
@@ -45,12 +39,11 @@
         border-radius: 14px;
         height: 133px;
         gap: 21px;
-        
+
         img {
-            
             border: 2px solid white;
             border-radius: 50%;
-            width: 66px; 
+            width: 66px;
             height: 66px;
         }
 
@@ -62,6 +55,7 @@
             background-color: $blue;    
             border-radius: 14px;
             font-size: 24px;
+
             h1 {
                 font-size: 15px;
                 font-weight: 100;
@@ -72,27 +66,26 @@
                 font-weight: 100;
             }
         }
-
     }
-    
+
     .buttons {
         width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
+
         button {
             background-color: $darkBlue;
-            font-family:$rubik;
+            font-family: $rubik;
             font-size: 18px;
             color: $desaturatedBlue;
             cursor: pointer;
+
             &:hover {
                 color: white;
             }
         }
     }
- 
 }
 
 .activity {
@@ -103,8 +96,7 @@
     margin-top: 25px;
     border-radius: 14px;
     overflow: hidden;
-    
-    // icons-background-color
+
     &.Work {
         background-color: $work;
     }
@@ -131,6 +123,7 @@
         width: 78px;
         height: 78px;
     }
+
     .small-block {
         display: flex;
         flex-direction: column;
@@ -142,11 +135,17 @@
         position: absolute;
         border-radius: 14px;
         background-color: $darkBlue;
- 
         font-family: $rubik;
         color: white;
         font-weight: 100;
-       
+
+        &:hover { 
+            background-color: lighten($darkBlue, 20%);
+            cursor: pointer;
+        }
+        &:has(.dots-menu:hover) {
+            background-color: $darkBlue;
+        }
         .top-row {
             display: flex;
             flex-direction: row;
@@ -154,16 +153,23 @@
             align-items: center;
             width: 100%;
             padding: 0px 18px;
-            //padding-right: 18px;
+
             .activity-type {
                 font-size: 18px;
-           }
+            }
+
             .dots-menu {
                 display: flex;
                 width: 21px;
                 height: 5px;
                 flex-direction: row;
                 gap: 3px;
+                
+                &:hover { 
+                    background-color: lighten($darkBlue, 20%);
+                    cursor: pointer;
+                }
+
                 .dot {
                     width: 5px;
                     height: 5px;
@@ -172,24 +178,23 @@
                 }
             }
         }
-        
-        .bottom-row{
+
+        .bottom-row {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             width: 100%;
             padding: 0px 18px;
+
             .time-amount {
                 font-size: 32px;
             }
+
             .last-period {
                 font-size: 15px;
                 color: $paleBlue;
             }
         }
-
     }
-
 }
-
